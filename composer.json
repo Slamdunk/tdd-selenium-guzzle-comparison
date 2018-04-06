@@ -1,0 +1,8 @@
+{
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "codeception/codeception": "^2.4"
+    }
+}
