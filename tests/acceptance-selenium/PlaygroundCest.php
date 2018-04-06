@@ -1,11 +1,15 @@
 <?php
 
-class FirstCest
+namespace Tests\AcceptanceSelenium;
+
+use AcceptanceSeleniumTester;
+
+class PlaygroundCest
 {
-    public function testDatePickerWorks(AcceptanceTester $I)
+    public function testDatePickerWorks(AcceptanceSeleniumTester $I)
     {
         $I->amOnPage('/');
-        $I->see('Selenium workplace');
+        $I->see('Playground');
         $I->seeInFormFields('#form', [
             'date' => '',
         ]);

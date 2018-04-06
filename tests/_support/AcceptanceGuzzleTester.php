@@ -15,9 +15,9 @@
  *
  * @SuppressWarnings(PHPMD)
 */
-class AcceptanceTester extends \Codeception\Actor
+class AcceptanceGuzzleTester extends \Codeception\Actor
 {
-    use _generated\AcceptanceTesterActions;
+    use _generated\AcceptanceGuzzleTesterActions;
 
    /**
     * Define custom actions here

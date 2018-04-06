@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Selenium workplace</title>
+    <title>Playground</title>
     <link rel="stylesheet" href="/cupertino/jquery-ui.min.css">
     <script src="/jquery.min.js"></script>
     <script src="/jquery-ui.min.js"></script>
@@ -14,7 +14,7 @@
     </script>
 </head>
 <body>
-<h1>Selenium workplace</h1>
+<h1>Playground</h1>
 
 <?php if (isset($_POST['date'])): ?>
     <p style="color:green"><?php echo htmlspecialchars($_POST['date']);?></p>
