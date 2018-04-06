@@ -7,7 +7,9 @@
     <script src="/datepicker-it.js"></script>
     <script type="text/javascript">
         $(function(){
-            $("#date").datepicker($.datepicker.regional["it"]);
+            var options = $.datepicker.regional["it"];
+            options.showAnim = '';
+            $("#date").datepicker(options);
         });
     </script>
 </head>
@@ -18,7 +20,7 @@
     <p style="color:green"><?php echo htmlspecialchars($_POST['date']);?></p>
 <?php endif; ?>
 
-<form action="/" method="POST">
+<form id="form" action="/" method="POST">
     <input type="text" name="date" id="date">
     <button type="submit=">Send</button>
 </form>
