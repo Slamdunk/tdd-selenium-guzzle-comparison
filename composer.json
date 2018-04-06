@@ -1,8 +1,16 @@
 {
     "require": {
-        "php": "^7.1"
+        "php": "^7.1",
+        "bower-asset/jquery": "^3.3",
+        "bower-asset/jquery-ui": "^1.12"
     },
     "require-dev": {
         "codeception/codeception": "^2.4"
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
