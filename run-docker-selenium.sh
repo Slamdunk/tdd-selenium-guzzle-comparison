@@ -3,4 +3,4 @@
 set -ex
 
 date
-sudo docker run --net=host selenium/standalone-chrome
+docker run --net=host selenium/standalone-chrome
