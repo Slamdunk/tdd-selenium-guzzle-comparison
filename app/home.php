@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Playground</title>
+    <title>Playground PHP</title>
     <link rel="stylesheet" href="/cupertino/jquery-ui.min.css">
     <script src="/jquery.min.js"></script>
     <script src="/jquery-ui.min.js"></script>
@@ -13,13 +13,18 @@
             $("#date").datepicker(options);
         });
     </script>
+    <style type="text/css">
+    #result {
+        color: green;
+        border: 1px solid green;
+        width: 10em;
+    }
+    </style>
 </head>
 <body>
-<h1>Playground</h1>
+<h1>Playground PHP</h1>
 
-<?php if (isset($_POST['date'])): ?>
-    <p style="color:green"><?php echo htmlspecialchars($_POST['date']);?></p>
-<?php endif; ?>
+<p id="result"><?php echo ($_POST['date'] ?? null) ?: '&nbsp;';?></p>
 
 <form id="form" action="/" method="POST">
     <input type="text" name="date" id="date">
