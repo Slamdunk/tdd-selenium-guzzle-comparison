@@ -2,7 +2,9 @@
     "require": {
         "php": "^7.1",
         "bower-asset/jquery": "^3.3",
-        "bower-asset/jquery-ui": "^1.12"
+        "bower-asset/jquery-ui": "^1.12",
+        "bower-asset/angularjs": "^1.6",
+        "bower-asset/bootstrap": "^4.0"
     },
     "require-dev": {
         "codeception/codeception": "^2.4",
