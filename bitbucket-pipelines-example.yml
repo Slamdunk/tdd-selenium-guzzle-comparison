@@ -1,0 +1,34 @@
+clone:
+  depth: 1
+
+options:
+  max-time: 5
+
+pipelines:
+  default:
+    - step:
+        name: PHP Tests
+        image: zoeslam/php-mysql:7.1-mysql
+        caches:
+          - composer
+          - custom-cache
+        script:
+          - mysql -V && php -v
+          - composer self-update
+          - composer install
+          - vendor/bin/codecept build
+          - composer dump-autoload --classmap-authoritative
+          - vendor/bin/phpstan analyse
+          - vendor/bin/php-cs-fixer fix -v
+          - service mysql start
+          - mysql -e "CREATE USER 'my_app'@'%' IDENTIFIED BY 'my_app'; GRANT ALL ON *.* TO 'my_app'@'%'; CREATE DATABASE my_app; FLUSH PRIVILEGES;"
+          - vendor/bin/codecept run
+    - step:
+        name: CSS + JS Tests
+        image: node:latest
+        caches:
+          - node
+        script:
+          - npm version
+          - npm install
+          - npm run cs
