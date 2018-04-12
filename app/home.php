@@ -1,3 +1,10 @@
+<?php
+
+if (false) {
+    \RuntimeException::FOO;
+}
+
+?>
 <!doctype html>
 <html>
 <head>
