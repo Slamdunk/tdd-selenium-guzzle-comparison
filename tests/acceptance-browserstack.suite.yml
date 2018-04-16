@@ -1,0 +1,20 @@
+# Codeception Test Suite Configuration
+#
+# Suite for acceptance tests.
+# Perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+actor: AcceptanceBrowserstackTester
+modules:
+  enabled:
+    - \Tests\CodeceptionModule\BrowserStackWebDriver
+  config:
+    \Tests\CodeceptionModule\BrowserStackWebDriver:
+      host: 'hub-cloud.browserstack.com'
+      port: 80
+      browser: chrome
+      url: 'http://localhost/'
+      capabilities:
+        'browserstack.user': 'mariorossi109'
+        'browserstack.key' : 'iNcbfdhymKUB5i8kqbxK'
+        'browserstack.local': true
