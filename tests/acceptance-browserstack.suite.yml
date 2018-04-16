@@ -6,15 +6,38 @@
 
 actor: AcceptanceBrowserstackTester
 modules:
-  enabled:
-    - \Tests\CodeceptionModule\BrowserStackWebDriver
-  config:
-    \Tests\CodeceptionModule\BrowserStackWebDriver:
-      host: 'hub-cloud.browserstack.com'
-      port: 80
-      browser: chrome
-      url: 'http://localhost/'
-      capabilities:
-        'browserstack.user': 'mariorossi109'
-        'browserstack.key' : 'iNcbfdhymKUB5i8kqbxK'
-        'browserstack.local': true
+    enabled:
+        - \Tests\CodeceptionModule\BrowserStackWebDriver
+    config:
+        \Tests\CodeceptionModule\BrowserStackWebDriver:
+            host: 'hub-cloud.browserstack.com'
+            port: 80
+            browser: chrome
+            url: 'http://localhost/'
+            capabilities:
+                'browserstack.user': 'mariorossi109'
+                'browserstack.key' : 'iNcbfdhymKUB5i8kqbxK'
+                'browserstack.local': true
+env:
+    chrome:
+
+    xp_ie7:
+        modules:
+            config:
+                \Tests\CodeceptionModule\BrowserStackWebDriver:
+                    capabilities:
+                        'os': 'Windows'
+                        'os_version': 'XP'
+                        'browser': 'IE'
+                        'browser_version': '7.0'
+                        'resolution': '1024x768'
+                        'browserstack.selenium_version': '3.5.2'
+
+    galaxy_s8:
+        modules:
+            config:
+                \Tests\CodeceptionModule\BrowserStackWebDriver:
+                    capabilities:
+                        'device': 'Samsung Galaxy S8'
+                        'realMobile': 'true'
+                        'os_version': '7.0'
