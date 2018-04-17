@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\AcceptanceSelenium;
+namespace Tests\AcceptanceBrowserstack;
 
 use AcceptanceBrowserstackTester;
 
