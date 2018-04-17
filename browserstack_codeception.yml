@@ -1,0 +1,6 @@
+paths:
+    tests: browserstack_tests
+    output: browserstack_tests/_output
+    data: browserstack_tests/_data
+    support: browserstack_tests/_support
+    envs: browserstack_tests/_envs

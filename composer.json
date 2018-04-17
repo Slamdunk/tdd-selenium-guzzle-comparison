@@ -13,7 +13,10 @@
         "browserstack/browserstack-local": "dev-master"
     },
     "autoload-dev": {
-        "psr-4": { "Tests\\": "tests/" }
+        "psr-4": {
+            "Tests\\Browserstack\\": "browserstack_tests/",
+            "Tests\\Local\\": "local_tests/"
+        }
     },
     "repositories": [
         {

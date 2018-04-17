@@ -7,4 +7,4 @@
 actor: FunctionalUniversalTester
 modules:
     enabled:
-        - \Tests\CodeceptionModule\UniversalFramework
+        - \Tests\Local\CodeceptionModule\UniversalFramework

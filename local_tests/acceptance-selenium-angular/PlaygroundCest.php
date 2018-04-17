@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\AcceptanceSeleniumAngular;
+namespace Tests\Local\AcceptanceSeleniumAngular;
 
 use AcceptanceSeleniumAngularTester;
 

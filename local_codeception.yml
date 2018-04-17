@@ -1,0 +1,6 @@
+paths:
+    tests: local_tests
+    output: local_tests/_output
+    data: local_tests/_data
+    support: local_tests/_support
+    envs: local_tests/_envs

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\CodeceptionModule;
+namespace Tests\Browserstack\CodeceptionModule;
 
 final class BrowserStackWebDriver extends \Codeception\Module\WebDriver
 {

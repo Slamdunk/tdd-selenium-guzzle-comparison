@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\FunctionalUniversal;
+namespace Tests\Local\FunctionalUniversal;
 
 use FunctionalUniversalTester;
 

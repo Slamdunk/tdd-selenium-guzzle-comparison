@@ -7,9 +7,9 @@
 actor: AcceptanceBrowserstackTester
 modules:
     enabled:
-        - \Tests\CodeceptionModule\BrowserStackWebDriver
+        - \Tests\Browserstack\CodeceptionModule\BrowserStackWebDriver
     config:
-        \Tests\CodeceptionModule\BrowserStackWebDriver:
+        \Tests\Browserstack\CodeceptionModule\BrowserStackWebDriver:
             host: 'hub-cloud.browserstack.com'
             port: 80
             browser: chrome
@@ -24,7 +24,7 @@ env:
     xp_ie7:
         modules:
             config:
-                \Tests\CodeceptionModule\BrowserStackWebDriver:
+                \Tests\Browserstack\CodeceptionModule\BrowserStackWebDriver:
                     capabilities:
                         'os': 'Windows'
                         'os_version': 'XP'
@@ -36,7 +36,7 @@ env:
     galaxy_s8:
         modules:
             config:
-                \Tests\CodeceptionModule\BrowserStackWebDriver:
+                \Tests\Browserstack\CodeceptionModule\BrowserStackWebDriver:
                     capabilities:
                         'device': 'Samsung Galaxy S8'
                         'realMobile': 'true'

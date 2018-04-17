@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\CodeceptionModule;
+namespace Tests\Local\CodeceptionModule;
 
 final class UniversalFramework extends \Codeception\Lib\Framework
 {
